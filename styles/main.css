@@ -1,0 +1,466 @@
+﻿body, div, dl, dt, dd, ul, ol, h1, h2, h3, h4, h5, h6, pre, form, fieldshet.textarea, p, block {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*body*/
+body {
+    background-color: rgb(237,237,237);
+    font-family: Arial, melvetica, sans-serif;
+    font-size: 12px;
+}
+
+.banner{
+    height: 200px;
+    width: 1002px;
+    border: 3px solid #000000;
+    background-size: cover;
+}
+/*page*/
+.wrapper {
+    width: 950px;
+    margin: auto;
+
+      padding-bottom: 20px;
+    background-color: white;
+
+    -moz-border-radius: 25px;
+    -webkit-border-radius:25px;
+    border-radius:25px;  padding-bottom: 20px;
+    background-color: white;
+
+}
+
+/*homepage*/
+
+.content {
+    width: 100%;
+    background-color: rgb(254,254,254);
+    border: 1px solid rgb(224,244,224);
+    border-radius: 5px 5px 5px 5px;
+    
+    margin-top: 8px;
+    margin-bottom: 8px;
+    min-height: 400px;
+}
+
+/*Menu*/
+
+.menu {
+    background: linear-gradient(to top, #c2bcb5, #ffffff);
+    width: 100%;
+    margin: 0px 0px 10px;
+    padding: 0px;
+    height: 40px;
+    color: rgb(243,243,243);
+    border-radius: 5px 5px 5px 5px;
+}
+
+.navigation_first_item {
+    border-left: 0px;
+    border-radius: 5px 0 0 5px;
+}
+
+.navitem_s {
+    float: left;
+    border-right: 1px solid rgb(10,85,125);
+    border-left: 1px solid rgb(67,153,200);
+    height: 40px;
+    background-color: rgb(14,79,114);
+}
+
+.menu ul{
+
+}
+
+.menu ul li {
+    float: left;
+    display: block;
+    list-style: none;
+     text-transform:uppercase;
+    border-right: 1px solid #FFFFFF;
+    border-left: 1px solid #FFFFFF;
+}
+
+    .menu ul li.navigation_first_item:hover {
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    .menu ul li a 
+    {
+        font-size: 13px;
+        font-weight: bold;
+        line-height: 40px;
+        padding:8px 20px;
+        color: black;
+        text-decoration: none;
+    }
+
+    .menu ul li:hover {
+        background-color: gray;
+        border-right: 1px solid rgb(14,89,130);
+    }
+
+.clear {
+    clear: both;
+}
+
+/*footer*/
+.footer {
+    height: 50px;
+    background: linear-gradient(to top, #c2bcb5, #ffffff);
+    color: black;
+    border-radius: 5px 5px 5px 5px;
+    clear:both;
+}
+
+    .footer h2 {
+        padding: 15px;
+        text-align: center;
+    }
+
+    .contact  {
+     height:600px;
+     margin:0;
+     padding:0;
+     background-image:url("../images/map.png");
+     background-size:cover;
+    }
+
+    .contact #contactform {
+      
+      float:right;
+      position:absolute;
+      z-index:1;
+      padding:20px;
+     
+      color:white;
+      font-size:1.2em;
+    }
+
+    .contact fieldset{
+
+        background-color:#000000;
+        padding:20px;
+        border-radius:10px;
+        opacity:.7;
+    }
+
+    .contact fieldset legend {
+        padding:20px;
+        background-color:#000000;
+        font-size:1.3em;
+        margin-left:-20px;
+        border-radius:20px;
+        color:red;
+    }
+
+    #contactform table {
+
+        border-collapse:collapse;
+    }
+
+    #contactform table td {
+       
+      height:50px;
+
+    }
+
+    #contactform table td input[type=text],   #contactform table td input[type=email]{
+
+        padding:5px;
+        border-radius:5px;
+    }
+    #map {
+        z-index:0;
+        width:100%;
+        height:100%;
+        position:relative;
+      
+    }
+    #default {
+
+        padding:10px;
+        font-family:Arial, 'Times New Roman', Times, serif;
+    }
+    #default #slider {
+        width:40%;
+        border:1px solid gray;
+        padding:20px;
+        float:left;
+    }
+    #default #slider img {
+        width:80%;
+        height:80%;
+
+    }
+
+    
+    #default #message {
+        width:50%;
+        padding:20px;
+        float:right;
+        height:400px;
+        background-image:url("../images/watches/mens-watches_header.jpg");
+        background-size:cover;
+        text-align:center;
+
+    }
+
+    #default #message h1,p {
+        padding:10px;
+        background-color:black;
+        color:white;
+
+    }
+
+    #default #message p {
+        padding:10px;
+        background-color:#050217;
+        color:white;
+        text-align:left;
+        line-height:40px;
+        font-size:1.2em;
+    }
+
+    .product {
+        overflow-y:scroll;
+        height:450px;
+     
+        
+
+    }
+    .product p {
+        margin:0;
+        padding:10px;
+        background-color:none;
+        position:absolute;
+        width:500px;
+        opacity:.8;
+    }
+
+    .product ul {
+        list-style:none;
+        display:inline-block;
+        margin:5px;
+        padding:5px;
+        text-align:center;
+        border:1px solid gray;
+
+    }
+    .product ul li ul {
+        text-align:left;
+        font-weight:bold;
+    }
+    .product ul img {
+        width:250px;
+        height:250px;
+
+    }
+
+   #loginpage {
+       padding:20px;
+   }
+   #loginpage input[type="text"],input[type="password"],input[type="email"],select{
+       width:180px;
+       padding:10px;
+   }
+   #loginpage fieldset ul{
+       padding:10px;
+   }
+   #loginpage h2 {
+       text-align:center;
+   }
+   #loginpage table {
+       margin:0 auto;
+   }
+   #loginpage table{
+
+       padding:20px;
+       margin-top:10px;
+       margin-bottom:10px;
+       border:3px solid rgb(10,85,125);
+   }
+   #loginpage p {
+       background-color:white;
+       color:black;
+   }
+   #loginpage table input[type="radio"]{
+      background-color:black;
+   }
+
+   #default #usermenu {
+       padding:20px;
+       background-color:#050217;
+       color:white;
+       width:15%;
+       float:left;
+   }
+   #default div {
+      
+   }
+
+   #default #yourproducts {
+       width:75%;
+       padding:10px;
+       float:right;
+       
+   }
+   #default #usermenu h3 {
+       font-size:1.3em;
+       margin-bottom:20px;
+   }
+   #default #usermenu ul li {
+       line-height:20px;
+       padding:5px;
+       list-style:none;
+       background-color:white;
+       color:rgb(14,79,114);
+       width:100px;
+       margin:5px;
+       border:2px solid #050217;
+       text-align:center;
+   }
+
+   #default #usermenu ul li:hover {
+      cursor:pointer;
+      box-shadow:#000000 5px 5px 5px inset;
+      background-color:rgb(67,153,200);
+   }
+   #default #usermenu img {
+       width:100px;
+       height:100px;
+       display:block;
+       margin: 0 auto;
+       border-radius:100%;
+       border:2px solid white;
+   }
+     .userproducts {
+        overflow-y:scroll;
+        height:450px;
+     
+        
+
+    }
+    .userproducts p {
+        margin:0;
+        padding:10px;
+        background-color:none;
+        position:absolute;
+        width:500px;
+        opacity:.8;
+    }
+
+    .userproducts ul {
+        list-style:none;
+        display:inline-table;
+        margin:1px;
+        padding:1px;
+        text-align:center;
+        border:1px solid gray;
+
+    }
+    .userproducts ul li {
+          display:inline-block;
+    }
+    .userproducts ul li ul {
+        text-align:left;
+        font-weight:bold;
+        padding:5px;
+       
+    }
+    .userproducts ul li ul li {
+        list-style:none;
+        display:list-item;
+        
+    }
+    .userproducts ul img {
+        width:200px;
+        height:200px;
+
+    }
+    .userproducts ul img:hover{
+        opacity:.8;
+        box-shadow:gray 10px 5px 2px;
+        border-radius:10px;
+    }
+    #dashboard {
+        position:fixed;
+        background-color:#050217;
+        left:0;
+        border:2px solid #050217;
+        padding:20px;
+        width:10%;
+        color:white;
+    }
+    #dashboard ul li {
+       display:list-item; 
+       text-align:left;
+       padding:10px;
+    }
+    #dashboard ul {
+        border:none;
+    }
+    #dashboard a {
+        color:white;
+    }
+
+    #dashboard img {
+        width:100px;
+        height:100px;
+        border-radius:100%;
+    }
+    .cartdetails {
+        height:400px;
+        overflow:scroll;
+    }
+    #userproducts div {
+       
+    }
+    .payment {
+        width:40%;
+        float:left;
+        padding:30px;
+    }
+    .payment table {
+        text-align:left;
+        margin:10px;
+    }
+    .payment h3 {
+        font-size:2em;
+    }
+    .cartdetails{
+        width:50%;
+        float:right;
+    }
+    .cartdetails img {
+        width:200px;
+        height:200px;
+        display:block;
+        margin:0 auto;
+    }
+    .cartdetails table {
+        margin: 0 auto;
+        padding:10px;
+        border:1px solid gray;
+    }
+    .cartdetails table input[type="email"],.cartdetails table input[type="password"]{
+        padding:2px;
+        width:50px;
+    }
+    .purchasehistory {
+        padding:20px;
+        margin:0 auto;
+        overflow:auto;
+    }
+    .purchasehistory table{
+        font-size:1.2em;
+        width:500px;
+        margin:0 auto;
+        padding:10px;
+    }
+
+  
+  
